@@ -53,6 +53,7 @@ ynh_use_logrotate
 #=================================================
 ynh_script_progression --message="Adding app's configuration file..."
 
+session_key=$(ynh_string_random --length=128)
 ynh_add_config --template=".env" --destination="$install_dir/.env"
 
 # FIXME: this should be handled by the core in the future
@@ -90,3 +91,4 @@ ynh_systemd_action --service_name=$app --action="start" --log_path="/var/log/$ap
 # END OF SCRIPT
 #=================================================
 ynh_script_progression --message="Installation of $app completed" --last
+

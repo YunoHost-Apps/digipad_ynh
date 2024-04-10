@@ -1,0 +1,48 @@
+#!/bin/bash
+#### App file generated with YoloGen, the YunoHost app generator, version 0.9.2.
+
+#=================================================
+# GENERIC START
+#=================================================
+# IMPORT GENERIC HELPERS
+#=================================================
+
+# Keep this path for calling _common.sh inside the execution's context of backup and restore scripts
+source ../settings/scripts/_common.sh
+source /usr/share/yunohost/helpers
+
+#=================================================
+# DECLARE DATA AND CONF FILES TO BACKUP
+#=================================================
+ynh_print_info --message="Declaring files to be backed up..."
+
+#=================================================
+# BACKUP THE DATA DIR
+#=================================================
+
+ynh_backup --src_path="$data_dir" # --is_big
+
+#=================================================
+# SYSTEM CONFIGURATION
+#=================================================
+
+# Backup the nginx configuration
+ynh_backup --src_path="/etc/nginx/conf.d/$domain.d/$app.conf"
+
+# Backup the logrotate configuration
+ynh_backup --src_path="/etc/logrotate.d/$app"
+
+# Backup the systemd service unit
+ynh_backup --src_path="/etc/systemd/system/$app.service"
+
+#=================================================
+# BACKUP VARIOUS FILES
+#=================================================
+
+ynh_backup --src_path="/var/log/$app/" # TODO : add an option to specify log file
+
+#=================================================
+# END OF SCRIPT
+#=================================================
+
+ynh_print_info --message="Backup script completed for $app. (YunoHost will then actually copy those files to the archive)."

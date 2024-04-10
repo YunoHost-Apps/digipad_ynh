@@ -1,0 +1,82 @@
+#:schema https://raw.githubusercontent.com/YunoHost/apps/master/schemas/manifest.v2.schema.json
+
+packaging_format = 2
+
+id = "digipad"
+name = "Digipad"
+
+description.en = "Create multimedia collaborative walls"
+description.fr = "Créer des murs collaboratifs multimédias"
+
+version = "1.1.21~ynh1"
+
+maintainers = ["mrflos"]
+
+[upstream]
+license = "AGPL-3.0-or-later"
+website = "https://digipad.app/"
+demo = "https://digipad.app/"
+admindoc = "https://codeberg.org/ladigitale/digipad/src/branch/master/README.md"
+
+code = "https://codeberg.org/ladigitale/digipad"
+
+[integration]
+yunohost = '>= 11.2'
+architectures = "all" # TODO : handle the "all" option (no ["all"])
+multi_instance = true
+ldap = "not_relevant" # TODO : fixme, use actual booleans + handle the "not_relevant" value
+sso = "not_relevant"
+# FIXME: replace with an **estimate** minimum disk and RAM requirements. e.g. 20M, 400M, 1G... You may have have a look at CI results
+disk = "50M"
+ram.build = "50M"
+ram.runtime = "50M"
+
+[install]
+
+    [install.domain]
+    type = "domain"
+
+    [install.path]
+    type = "path"
+    default = "/digipad"
+
+    [install.init_main_permission]
+    type = "group"
+    default = "visitors"
+
+    [install.language]
+    ask.en = "Choose the application language"
+    ask.fr = "Choisissez la langue de l'application"
+    type = "select"
+    choices = en
+
+[resources]
+
+    [resources.sources]
+
+        [resources.sources.main]
+        # This will pre-fetch the asset which can then be deployed during the install/upgrade scripts with :
+        #    ynh_setup_source --dest_dir="$install_dir"
+        # You can also define other assets than "main" and add --source_id="foobar" in the previous command
+        url = "https://codeberg.org/ladigitale/digipad/archive/1.1.21.tar.gz"
+        sha256 = "b02c66309c83d4051b7631d6ceaf4c730fb951d98a7583960dc526bc37253c69"
+
+        # These infos are used by https://github.com/YunoHost/apps/blob/master/tools/autoupdate_app_sources/autoupdate_app_sources.py
+        # to auto-update the previous asset urls and sha256sum + manifest version
+        # assuming the upstream's code repo is on github and relies on tags or releases
+        # See the 'sources' resource documentation for more details
+
+        autoupdate.strategy = "latest_forgejo_tag"
+
+    [resources.system_user]
+
+    [resources.install_dir]
+
+    [resources.data_dir]
+
+    [resources.permissions]
+    main.url = "/"
+
+    [resources.ports]
+    [resources.apt]
+    packages = "redis-server "

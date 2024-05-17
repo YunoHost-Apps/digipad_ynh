@@ -3,7 +3,7 @@
 请勿手动编辑。
 -->
 
-# YunoHost 的 Digipad
+# YunoHost 上的 Digipad
 
 [![集成程度](https://dash.yunohost.org/integration/digipad.svg)](https://dash.yunohost.org/appci/app/digipad) ![工作状态](https://ci-apps.yunohost.org/ci/badges/digipad.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/digipad.maintain.svg)
 

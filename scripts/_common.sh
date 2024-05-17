@@ -4,8 +4,9 @@
 # COMMON VARIABLES
 #=================================================
 
-nodejs_version=20
+nodejs_version=18
 server_ip=$(curl https://ip.yunohost.org)
+
 #=================================================
 # PERSONAL HELPERS
 #=================================================

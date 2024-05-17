@@ -23,8 +23,11 @@ code = "https://codeberg.org/ladigitale/digipad"
 yunohost = '>= 11.2'
 architectures = "all"
 multi_instance = true
+
 ldap = "not_relevant"
+
 sso = "not_relevant"
+
 disk = "100M"
 ram.build = "150M"
 ram.runtime = "150M"
@@ -62,6 +65,3 @@ allow_email = true
 main.url = "/"
 
 [resources.ports]
-
-[resources.apt]
-packages = "redis-server"

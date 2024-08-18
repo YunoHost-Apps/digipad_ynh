@@ -79,4 +79,3 @@ ynh_systemd_action --service_name=$app --action="start" --log_path="/var/log/$ap
 # END OF SCRIPT
 #=================================================
 ynh_script_progression --message="Installation of $app completed" --last
-

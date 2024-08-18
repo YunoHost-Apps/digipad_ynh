@@ -1,11 +1,9 @@
 #!/bin/bash
-### App file generated with YoloGen, the Yunohost app generator, version 0.9.2.
 
-#=================================================
-# GENERIC START
 #=================================================
 # IMPORT GENERIC HELPERS
 #=================================================
+
 source _common.sh
 source /usr/share/yunohost/helpers
 
@@ -39,8 +37,7 @@ ynh_add_nginx_config
 # Create a dedicated systemd config
 ynh_add_systemd_config
 
-yunohost service add $app --log="/var/log/$app/$app.log"
-
+yunohost service add "$app" --description="Create multimedia collaborative walls" --log="/var/log/$app/$app.log"
 # Use logrotate to manage application logfile(s)
 ynh_use_logrotate
 
@@ -73,7 +70,7 @@ popd
 ynh_script_progression --message="Starting app's systemd service..." --weight=2
 
 # Start a systemd service
-ynh_systemd_action --service_name=$app --action="start" --log_path="/var/log/$app/$app.log"
+ynh_systemd_action --service_name=$app --action="start" --log_path="systemd"
 
 #=================================================
 # END OF SCRIPT

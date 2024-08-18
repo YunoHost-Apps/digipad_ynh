@@ -1,13 +1,9 @@
 #!/bin/bash
-### App file generated with YoloGen, the Yunohost app generator, version 0.9.2.
 
-#=================================================
-# GENERIC START
 #=================================================
 # IMPORT GENERIC HELPERS
 #=================================================
 
-# Keep this path for calling _common.sh inside the execution's context of backup and restore scripts
 source ../settings/scripts/_common.sh
 source /usr/share/yunohost/helpers
 
@@ -27,7 +23,6 @@ ynh_script_progression --message="Restoring the data directory..." --weight=1
 
 ynh_restore_file --origin_path="$data_dir" --not_mandatory
 
-# (Same as for install dir)
 chown -R $app:www-data "$data_dir"
 
 #=================================================
@@ -42,30 +37,19 @@ ynh_exec_warn_less ynh_install_nodejs --nodejs_version=$nodejs_version
 #=================================================
 ynh_script_progression --message="Restoring system configurations related to $app..." --weight=1
 
-# This should be a symetric version of what happens in the install script
-
 ynh_restore_file --origin_path="/etc/nginx/conf.d/$domain.d/$app.conf"
 
 ynh_restore_file --origin_path="/etc/systemd/system/$app.service"
 systemctl enable $app.service --quiet
 
-yunohost service add $app --log="/var/log/$app/$app.log"
-
 ynh_restore_file --origin_path="/etc/logrotate.d/$app"
-
-#=================================================
-# RESTORE VARIOUS FILES
-#=================================================
-
-ynh_restore_file --origin_path="/var/log/$app/" # TODO : add custom log file option
 
 #=================================================
 # RELOAD NGINX AND PHP-FPM OR THE APP SERVICE
 #=================================================
 ynh_script_progression --message="Reloading NGINX web server and $app's service..." --weight=1
 
-# Typically you only have either $app or php-fpm but not both at the same time...
-ynh_systemd_action --service_name=$app --action="start" --log_path="/var/log/$app/$app.log"
+ynh_systemd_action --service_name=$app --action="start" --log_path="systemd"
 
 ynh_systemd_action --service_name=nginx --action=reload
 

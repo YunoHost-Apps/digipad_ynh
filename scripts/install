@@ -1,11 +1,9 @@
 #!/bin/bash
-### App file generated with YoloGen, the Yunohost app generator, version 0.9.2.
 
-#=================================================
-# GENERIC START
 #=================================================
 # IMPORT GENERIC HELPERS
 #=================================================
+
 source _common.sh
 source /usr/share/yunohost/helpers
 
@@ -73,7 +71,7 @@ popd
 ynh_script_progression --message="Starting app's systemd service..." --weight=2
 
 # Start a systemd service
-ynh_systemd_action --service_name=$app --action="start" --log_path="/var/log/$app/$app.log"
+ynh_systemd_action --service_name=$app --action="start" --log_path="systemd"
 
 #=================================================
 # END OF SCRIPT

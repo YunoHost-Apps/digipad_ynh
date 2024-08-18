@@ -5,7 +5,7 @@ Il NE doit PAS être modifié à la main.
 
 # Digipad pour YunoHost
 
-[![Niveau d’intégration](https://dash.yunohost.org/integration/digipad.svg)](https://dash.yunohost.org/appci/app/digipad) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/digipad.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/digipad.maintain.svg)
+[![Niveau d’intégration](https://dash.yunohost.org/integration/digipad.svg)](https://ci-apps.yunohost.org/ci/apps/digipad/) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/digipad.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/digipad.maintain.svg)
 
 [![Installer Digipad avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=digipad)
 
@@ -18,7 +18,7 @@ Il NE doit PAS être modifié à la main.
 
 Créer des murs collaboratifs multimédias
 
-**Version incluse :** 1.1.21~ynh1
+**Version incluse :** 1.2.2~ynh1
 
 **Démo :** <https://digipad.app/>
 ## Documentations et ressources

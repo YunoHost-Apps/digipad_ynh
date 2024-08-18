@@ -5,7 +5,7 @@ No se debe editar a mano.
 
 # Digipad para Yunohost
 
-[![Nivel de integración](https://dash.yunohost.org/integration/digipad.svg)](https://dash.yunohost.org/appci/app/digipad) ![Estado funcional](https://ci-apps.yunohost.org/ci/badges/digipad.status.svg) ![Estado En Mantención](https://ci-apps.yunohost.org/ci/badges/digipad.maintain.svg)
+[![Nivel de integración](https://dash.yunohost.org/integration/digipad.svg)](https://ci-apps.yunohost.org/ci/apps/digipad/) ![Estado funcional](https://ci-apps.yunohost.org/ci/badges/digipad.status.svg) ![Estado En Mantención](https://ci-apps.yunohost.org/ci/badges/digipad.maintain.svg)
 
 [![Instalar Digipad con Yunhost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=digipad)
 
@@ -18,7 +18,7 @@ No se debe editar a mano.
 
 
 
-**Versión actual:** 1.1.21~ynh1
+**Versión actual:** 1.2.2~ynh1
 
 **Demo:** <https://digipad.app/>
 ## Documentaciones y recursos

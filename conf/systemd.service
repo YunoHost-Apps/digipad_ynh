@@ -1,5 +1,5 @@
 [Unit]
-Description=Service for Digipad (__APP__)
+Description=Digipad: collaborative walls
 After=network.target
 
 [Service]

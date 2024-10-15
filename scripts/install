@@ -31,8 +31,6 @@ yunohost service add "$app" --description="Create multimedia collaborative walls
 ynh_config_add_logrotate
 
 #=================================================
-# APP INITIAL CONFIGURATION
-#=================================================
 # ADD A CONFIGURATION
 #=================================================
 ynh_script_progression "Adding app's configuration file..."
@@ -48,6 +46,7 @@ ynh_script_progression "Installing app..."
 
 pushd $install_dir
 	ynh_hide_warnings ynh_exec_as_app npm install --omit=dev --ignore-scripts
+	ynh_hide_warnings ynh_exec_as_app npm run build
 popd
 
 #=================================================
@@ -60,4 +59,5 @@ ynh_systemctl --service=$app --action="start" --log_path="systemd"
 #=================================================
 # END OF SCRIPT
 #=================================================
+
 ynh_script_progression "Installation of $app completed"

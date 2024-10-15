@@ -18,7 +18,7 @@ No se debe editar a mano.
 
 
 
-**Versión actual:** 1.2.2~ynh1
+**Versión actual:** 1.3.1~ynh1
 
 **Demo:** <https://digipad.app/>
 ## Documentaciones y recursos

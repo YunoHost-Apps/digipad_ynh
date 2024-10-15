@@ -18,7 +18,7 @@ EZ editatu eskuz.
 
 
 
-**Paketatutako bertsioa:** 1.2.2~ynh1
+**Paketatutako bertsioa:** 1.3.1~ynh1
 
 **Demoa:** <https://digipad.app/>
 ## Dokumentazioa eta baliabideak

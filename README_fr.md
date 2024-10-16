@@ -24,8 +24,7 @@ Créer des murs collaboratifs multimédias
 
 ## Captures d’écran
 
-![Capture d’écran de Digipad](./doc/screenshots/POST_INSTALL.md)
-![Capture d’écran de Digipad](./doc/screenshots/POST_INSTALL_fr.md)
+![Capture d’écran de Digipad](./doc/screenshots/screenshot.png)
 
 ## Documentations et ressources
 

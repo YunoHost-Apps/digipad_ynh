@@ -24,8 +24,7 @@
 
 ## Снимки экрана
 
-![Снимок экрана Digipad](./doc/screenshots/POST_INSTALL.md)
-![Снимок экрана Digipad](./doc/screenshots/POST_INSTALL_fr.md)
+![Снимок экрана Digipad](./doc/screenshots/screenshot.png)
 
 ## Документация и ресурсы
 

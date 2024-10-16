@@ -24,8 +24,7 @@
 
 ## 截图
 
-![Digipad 的截图](./doc/screenshots/POST_INSTALL.md)
-![Digipad 的截图](./doc/screenshots/POST_INSTALL_fr.md)
+![Digipad 的截图](./doc/screenshots/screenshot.png)
 
 ## 文档与资源
 

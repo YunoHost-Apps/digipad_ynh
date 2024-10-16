@@ -26,6 +26,13 @@ ynh_backup "/etc/logrotate.d/$app"
 ynh_backup "/etc/systemd/system/$app.service"
 
 #=================================================
+# BACKUP THE POSTGRESQL DATABASE
+#=================================================
+ynh_print_info "Backing up the PostgreSQL database..."
+
+ynh_psql_dump_db > db.sql
+
+#=================================================
 # END OF SCRIPT
 #=================================================
 

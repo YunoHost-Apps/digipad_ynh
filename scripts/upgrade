@@ -35,9 +35,9 @@ ynh_config_add_logrotate
 #=================================================
 # UPDATE A CONFIG FILE
 #=================================================
-ynh_script_progression "Updating configuration..."
+#ynh_script_progression "Updating configuration..."
 
-ynh_config_add --template=".env" --destination="$install_dir/.env"
+#ynh_config_add --template=".env" --destination="$install_dir/.env"
 
 #=================================================
 # INSTALL APP

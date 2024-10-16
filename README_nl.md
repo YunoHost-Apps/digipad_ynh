@@ -21,6 +21,12 @@ Hij mag NIET handmatig aangepast worden.
 **Geleverde versie:** 1.3.1~ynh1
 
 **Demo:** <https://digipad.app/>
+
+## Schermafdrukken
+
+![Schermafdrukken van Digipad](./doc/screenshots/POST_INSTALL.md)
+![Schermafdrukken van Digipad](./doc/screenshots/POST_INSTALL_fr.md)
+
 ## Documentatie en bronnen
 
 - Officiele website van de app: <https://digipad.app/>

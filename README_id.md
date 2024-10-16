@@ -21,6 +21,12 @@ Ini TIDAK boleh diedit dengan tangan.
 **Versi terkirim:** 1.3.1~ynh1
 
 **Demo:** <https://digipad.app/>
+
+## Tangkapan Layar
+
+![Tangkapan Layar pada Digipad](./doc/screenshots/POST_INSTALL.md)
+![Tangkapan Layar pada Digipad](./doc/screenshots/POST_INSTALL_fr.md)
+
 ## Dokumentasi dan sumber daya
 
 - Website aplikasi resmi: <https://digipad.app/>

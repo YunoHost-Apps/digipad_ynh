@@ -21,6 +21,12 @@ NON debe editarse manualmente.
 **Versión proporcionada:** 1.3.1~ynh1
 
 **Demo:** <https://digipad.app/>
+
+## Capturas de pantalla
+
+![Captura de pantalla de Digipad](./doc/screenshots/POST_INSTALL.md)
+![Captura de pantalla de Digipad](./doc/screenshots/POST_INSTALL_fr.md)
+
 ## Documentación e recursos
 
 - Web oficial da app: <https://digipad.app/>

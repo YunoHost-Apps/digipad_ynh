@@ -27,8 +27,8 @@ multi_instance = true
 ldap =  false
 sso = false
 
-disk = "100M"
-ram.build = "150M"
+disk = "800M"
+ram.build = "500M"
 ram.runtime = "150M"
 
 [install]

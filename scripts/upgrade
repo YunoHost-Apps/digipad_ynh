@@ -1,11 +1,4 @@
 #!/bin/bash
-### App file generated with YoloGen, the Yunohost app generator, version 0.9.2.
-
-#=================================================
-# GENERIC START
-#=================================================
-# IMPORT GENERIC HELPERS
-#=================================================
 
 source _common.sh
 source /usr/share/yunohost/helpers
@@ -13,58 +6,59 @@ source /usr/share/yunohost/helpers
 #=================================================
 # STOP SYSTEMD SERVICE
 #=================================================
-ynh_script_progression --message="Stopping a systemd service..."
+ynh_script_progression "Stopping $app's systemd service..."
 
-ynh_systemd_action --service_name=$app --action="stop" --log_path="/var/log/$app/$app.log"
+ynh_systemctl --service=$app --action="stop"
 
-#=================================================
-# "REBUILD" THE APP (DEPLOY NEW SOURCES, RERUN NPM BUILD...)
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
-ynh_script_progression --message="Upgrading source files..."
+ynh_script_progression "Upgrading source files..."
 
-# Download, check integrity, uncompress and patch the source from app.src
-ynh_setup_source --dest_dir="$install_dir" --full_replace=1 --keep=".env"
-
-chown -R $app:www-data "$install_dir"
+ynh_setup_source --dest_dir="$install_dir" --full_replace --keep=".env"
 
 #=================================================
 # REAPPLY SYSTEM CONFIGURATIONS
 #=================================================
-ynh_script_progression --message="Upgrading system configurations related to $app..."
+ynh_script_progression "Upgrading system configurations related to $app..."
 
-ynh_install_nodejs --nodejs_version=$nodejs_version
+ynh_nodejs_install
 
-ynh_add_nginx_config
+ynh_config_add_nginx
 
-ynh_add_systemd_config
+ynh_config_add_systemd
 
-yunohost service add $app --log="/var/log/$app/$app.log"
+yunohost service add "$app" --description="Create multimedia collaborative walls" --log="/var/log/$app/$app.log"
 
-ynh_use_logrotate --non-append
+ynh_config_add_logrotate
 
-#=================================================
-# RECONFIGURE THE APP (UPDATE CONF, APPLY MIGRATIONS...)
 #=================================================
 # UPDATE A CONFIG FILE
 #=================================================
-ynh_script_progression --message="Updating a configuration file..."
+ynh_script_progression "Updating configuration..."
 
-ynh_add_config --template=".env" --destination="$install_dir/.env"
+ynh_config_add --template=".env" --destination="$install_dir/.env"
 
-chmod 400 "$install_dir/.env"
-chown $app:$app "$install_dir/.env"
+#=================================================
+# INSTALL APP
+#=================================================
+ynh_script_progression "Installing $app..."
+
+pushd $install_dir
+	ynh_hide_warnings npm install
+popd
+
+chown -R "$app:$app" "$install_dir"
 
 #=================================================
 # START SYSTEMD SERVICE
 #=================================================
-ynh_script_progression --message="Starting a systemd service..."
+ynh_script_progression "Starting $app's systemd service..."
 
-ynh_systemd_action --service_name=$app --action="start" --log_path="/var/log/$app/$app.log"
+ynh_systemctl --service=$app --action="start" --log_path="systemd"
 
 #=================================================
 # END OF SCRIPT
 #=================================================
 
-ynh_script_progression --message="Upgrade of $app completed" --last
+ynh_script_progression "Upgrade of $app completed"

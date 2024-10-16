@@ -18,7 +18,7 @@ Ini TIDAK boleh diedit dengan tangan.
 
 
 
-**Versi terkirim:** 1.2.2~ynh1
+**Versi terkirim:** 1.3.1~ynh1
 
 **Demo:** <https://digipad.app/>
 ## Dokumentasi dan sumber daya

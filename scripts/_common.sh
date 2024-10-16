@@ -1,12 +1,7 @@
 #!/bin/bash
 
 #=================================================
-# COMMON VARIABLES
+# COMMON VARIABLES AND CUSTOM HELPERS
 #=================================================
 
-nodejs_version=16
-server_ip=$(curl https://ip.yunohost.org)
-
-#=================================================
-# PERSONAL HELPERS
-#=================================================
+nodejs_version="20"

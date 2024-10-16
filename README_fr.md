@@ -18,7 +18,7 @@ Il NE doit PAS être modifié à la main.
 
 Créer des murs collaboratifs multimédias
 
-**Version incluse :** 1.2.2~ynh1
+**Version incluse :** 1.3.1~ynh1
 
 **Démo :** <https://digipad.app/>
 ## Documentations et ressources

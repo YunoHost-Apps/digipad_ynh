@@ -41,6 +41,8 @@ ram.runtime = "150M"
     default = "visitors"
 
     [install.password]
+    help.en = "Password to access the administration page `/admin`"
+    help.fr ="Mot de passe pour accéder à la page d'administration `/admin`"
     type = "password"
 
 [resources]

@@ -1,0 +1,1 @@
+Le mot de passe doit être utilisé pour accéder à la page d'administration `__INSTALL_DIR__/admin`

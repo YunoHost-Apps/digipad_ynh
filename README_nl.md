@@ -24,8 +24,7 @@ Hij mag NIET handmatig aangepast worden.
 
 ## Schermafdrukken
 
-![Schermafdrukken van Digipad](./doc/screenshots/POST_INSTALL.md)
-![Schermafdrukken van Digipad](./doc/screenshots/POST_INSTALL_fr.md)
+![Schermafdrukken van Digipad](./doc/screenshots/screenshot.png)
 
 ## Documentatie en bronnen
 

@@ -24,8 +24,7 @@ NON debe editarse manualmente.
 
 ## Capturas de pantalla
 
-![Captura de pantalla de Digipad](./doc/screenshots/POST_INSTALL.md)
-![Captura de pantalla de Digipad](./doc/screenshots/POST_INSTALL_fr.md)
+![Captura de pantalla de Digipad](./doc/screenshots/screenshot.png)
 
 ## Documentación e recursos
 

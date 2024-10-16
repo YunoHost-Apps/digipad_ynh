@@ -24,8 +24,7 @@ Ini TIDAK boleh diedit dengan tangan.
 
 ## Tangkapan Layar
 
-![Tangkapan Layar pada Digipad](./doc/screenshots/POST_INSTALL.md)
-![Tangkapan Layar pada Digipad](./doc/screenshots/POST_INSTALL_fr.md)
+![Tangkapan Layar pada Digipad](./doc/screenshots/screenshot.png)
 
 ## Dokumentasi dan sumber daya
 

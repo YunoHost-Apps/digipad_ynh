@@ -24,8 +24,7 @@ EZ editatu eskuz.
 
 ## Pantaila-argazkiak
 
-![Digipad(r)en pantaila-argazkia](./doc/screenshots/POST_INSTALL.md)
-![Digipad(r)en pantaila-argazkia](./doc/screenshots/POST_INSTALL_fr.md)
+![Digipad(r)en pantaila-argazkia](./doc/screenshots/screenshot.png)
 
 ## Dokumentazioa eta baliabideak
 

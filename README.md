@@ -24,8 +24,7 @@ Create multimedia collaborative walls
 
 ## Screenshots
 
-![Screenshot of Digipad](./doc/screenshots/POST_INSTALL.md)
-![Screenshot of Digipad](./doc/screenshots/POST_INSTALL_fr.md)
+![Screenshot of Digipad](./doc/screenshots/screenshot.png)
 
 ## Documentation and resources
 

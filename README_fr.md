@@ -21,6 +21,12 @@ Créer des murs collaboratifs multimédias
 **Version incluse :** 1.3.1~ynh1
 
 **Démo :** <https://digipad.app/>
+
+## Captures d’écran
+
+![Capture d’écran de Digipad](./doc/screenshots/POST_INSTALL.md)
+![Capture d’écran de Digipad](./doc/screenshots/POST_INSTALL_fr.md)
+
 ## Documentations et ressources
 
 - Site officiel de l’app : <https://digipad.app/>

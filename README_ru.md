@@ -21,6 +21,12 @@
 **Поставляемая версия:** 1.3.1~ynh1
 
 **Демо-версия:** <https://digipad.app/>
+
+## Снимки экрана
+
+![Снимок экрана Digipad](./doc/screenshots/POST_INSTALL.md)
+![Снимок экрана Digipad](./doc/screenshots/POST_INSTALL_fr.md)
+
 ## Документация и ресурсы
 
 - Официальный веб-сайт приложения: <https://digipad.app/>

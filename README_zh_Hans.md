@@ -21,6 +21,12 @@
 **分发版本：** 1.3.1~ynh1
 
 **演示：** <https://digipad.app/>
+
+## 截图
+
+![Digipad 的截图](./doc/screenshots/POST_INSTALL.md)
+![Digipad 的截图](./doc/screenshots/POST_INSTALL_fr.md)
+
 ## 文档与资源
 
 - 官方应用网站： <https://digipad.app/>

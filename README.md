@@ -21,6 +21,12 @@ Create multimedia collaborative walls
 **Shipped version:** 1.3.1~ynh1
 
 **Demo:** <https://digipad.app/>
+
+## Screenshots
+
+![Screenshot of Digipad](./doc/screenshots/POST_INSTALL.md)
+![Screenshot of Digipad](./doc/screenshots/POST_INSTALL_fr.md)
+
 ## Documentation and resources
 
 - Official app website: <https://digipad.app/>

@@ -57,8 +57,6 @@ ram.runtime = "150M"
 
     [resources.install_dir]
 
-    [resources.data_dir]
-
     [resources.permissions]
     main.url = "/"
 

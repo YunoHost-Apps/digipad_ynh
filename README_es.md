@@ -21,6 +21,11 @@ No se debe editar a mano.
 **Versión actual:** 1.3.1~ynh1
 
 **Demo:** <https://digipad.app/>
+
+## Capturas
+
+![Captura de Digipad](./doc/screenshots/screenshot.png)
+
 ## Documentaciones y recursos
 
 - Sitio web oficial: <https://digipad.app/>

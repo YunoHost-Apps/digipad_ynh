@@ -21,6 +21,11 @@ EZ editatu eskuz.
 **Paketatutako bertsioa:** 1.3.1~ynh1
 
 **Demoa:** <https://digipad.app/>
+
+## Pantaila-argazkiak
+
+![Digipad(r)en pantaila-argazkia](./doc/screenshots/screenshot.png)
+
 ## Dokumentazioa eta baliabideak
 
 - Aplikazioaren webgune ofiziala: <https://digipad.app/>

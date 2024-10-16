@@ -1,0 +1,1 @@
+The password is to be used to access the administration page `__INSTALL_DIR__/admin`

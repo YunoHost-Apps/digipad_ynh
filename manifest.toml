@@ -20,14 +20,12 @@ admindoc = "https://codeberg.org/ladigitale/digipad/src/branch/master/README.md"
 code = "https://codeberg.org/ladigitale/digipad"
 
 [integration]
-yunohost = '>= 11.2.30'
+yunohost = ">= 11.2.30"
 helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
-
-ldap = "not_relevant"
-
-sso = "not_relevant"
+ldap =  false
+sso = false
 
 disk = "100M"
 ram.build = "150M"
@@ -37,10 +35,6 @@ ram.runtime = "150M"
 
     [install.domain]
     type = "domain"
-
-    [install.path]
-    type = "path"
-    default = "/digipad"
 
     [install.init_main_permission]
     type = "group"

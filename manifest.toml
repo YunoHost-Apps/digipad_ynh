@@ -35,37 +35,37 @@ ram.runtime = "150M"
 
 [install]
 
-[install.domain]
-type = "domain"
+    [install.domain]
+    type = "domain"
 
-[install.path]
-type = "path"
-default = "/digipad"
+    [install.path]
+    type = "path"
+    default = "/digipad"
 
-[install.init_main_permission]
-type = "group"
-default = "visitors"
+    [install.init_main_permission]
+    type = "group"
+    default = "visitors"
 
 [resources]
 
-[resources.sources]
+    [resources.sources]
 
-[resources.sources.main]
-url = "https://codeberg.org/ladigitale/digipad/archive/1.3.1.tar.gz"
-sha256 = "5ea70f68a9c4a8d9117913236954941d6cea7bd2cb48260786c86231ae80272f"
-autoupdate.strategy = "latest_codeberg_tag"
+    [resources.sources.main]
+    url = "https://codeberg.org/ladigitale/digipad/archive/1.3.1.tar.gz"
+    sha256 = "5ea70f68a9c4a8d9117913236954941d6cea7bd2cb48260786c86231ae80272f"
+    autoupdate.strategy = "latest_codeberg_tag"
 
-[resources.system_user]
-allow_email = true
+    [resources.system_user]
+    allow_email = true
 
-[resources.install_dir]
+    [resources.install_dir]
 
-[resources.data_dir]
+    [resources.data_dir]
 
-[resources.permissions]
-main.url = "/"
+    [resources.permissions]
+    main.url = "/"
 
-[resources.ports]
+    [resources.ports]
 
     [resources.apt]
     packages = "postgresql, postgresql-contrib, redis-server"

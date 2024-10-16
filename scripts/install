@@ -4,6 +4,12 @@ source _common.sh
 source /usr/share/yunohost/helpers
 
 #=================================================
+# INITIALIZE AND STORE SETTINGS
+#=================================================
+
+key=$(ynh_string_random --length=128)
+
+#=================================================
 # INSTALL DEPENDENCIES
 #=================================================
 ynh_script_progression "Installing NodeJS..."
@@ -31,13 +37,9 @@ yunohost service add "$app" --description="Create multimedia collaborative walls
 ynh_config_add_logrotate
 
 #=================================================
-# APP INITIAL CONFIGURATION
-#=================================================
 # ADD A CONFIGURATION
 #=================================================
 ynh_script_progression "Adding app's configuration file..."
-
-session_key=$(ynh_string_random --length=128)
 
 ynh_config_add --template=".env" --destination="$install_dir/.env"
 

@@ -49,7 +49,8 @@ ynh_config_add --template=".env" --destination="$install_dir/.env"
 ynh_script_progression "Installing app..."
 
 pushd $install_dir
-	ynh_hide_warnings ynh_exec_as_app npm install --omit=dev --ignore-scripts
+	#ynh_hide_warnings ynh_exec_as_app
+	npm install
 popd
 
 #=================================================

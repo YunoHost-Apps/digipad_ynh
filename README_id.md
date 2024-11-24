@@ -5,7 +5,9 @@ Ini TIDAK boleh diedit dengan tangan.
 
 # Digipad untuk YunoHost
 
-[![Tingkat integrasi](https://dash.yunohost.org/integration/digipad.svg)](https://ci-apps.yunohost.org/ci/apps/digipad/) ![Status kerja](https://ci-apps.yunohost.org/ci/badges/digipad.status.svg) ![Status pemeliharaan](https://ci-apps.yunohost.org/ci/badges/digipad.maintain.svg)
+[![Tingkat integrasi](https://apps.yunohost.org/badge/integration/digipad)](https://ci-apps.yunohost.org/ci/apps/digipad/)
+![Status kerja](https://apps.yunohost.org/badge/state/digipad)
+![Status pemeliharaan](https://apps.yunohost.org/badge/maintained/digipad)
 
 [![Pasang Digipad dengan YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=digipad)
 

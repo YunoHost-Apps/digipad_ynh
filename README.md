@@ -5,7 +5,9 @@ It shall NOT be edited by hand.
 
 # Digipad for YunoHost
 
-[![Integration level](https://dash.yunohost.org/integration/digipad.svg)](https://ci-apps.yunohost.org/ci/apps/digipad/) ![Working status](https://ci-apps.yunohost.org/ci/badges/digipad.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/digipad.maintain.svg)
+[![Integration level](https://apps.yunohost.org/badge/integration/digipad)](https://ci-apps.yunohost.org/ci/apps/digipad/)
+![Working status](https://apps.yunohost.org/badge/state/digipad)
+![Maintenance status](https://apps.yunohost.org/badge/maintained/digipad)
 
 [![Install Digipad with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=digipad)
 

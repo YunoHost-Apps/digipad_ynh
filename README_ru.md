@@ -5,7 +5,9 @@
 
 # Digipad для YunoHost
 
-[![Уровень интеграции](https://dash.yunohost.org/integration/digipad.svg)](https://ci-apps.yunohost.org/ci/apps/digipad/) ![Состояние работы](https://ci-apps.yunohost.org/ci/badges/digipad.status.svg) ![Состояние сопровождения](https://ci-apps.yunohost.org/ci/badges/digipad.maintain.svg)
+[![Уровень интеграции](https://apps.yunohost.org/badge/integration/digipad)](https://ci-apps.yunohost.org/ci/apps/digipad/)
+![Состояние работы](https://apps.yunohost.org/badge/state/digipad)
+![Состояние сопровождения](https://apps.yunohost.org/badge/maintained/digipad)
 
 [![Установите Digipad с YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=digipad)
 

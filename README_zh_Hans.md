@@ -5,7 +5,9 @@
 
 # YunoHost 上的 Digipad
 
-[![集成程度](https://dash.yunohost.org/integration/digipad.svg)](https://ci-apps.yunohost.org/ci/apps/digipad/) ![工作状态](https://ci-apps.yunohost.org/ci/badges/digipad.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/digipad.maintain.svg)
+[![集成程度](https://apps.yunohost.org/badge/integration/digipad)](https://ci-apps.yunohost.org/ci/apps/digipad/)
+![工作状态](https://apps.yunohost.org/badge/state/digipad)
+![维护状态](https://apps.yunohost.org/badge/maintained/digipad)
 
 [![使用 YunoHost 安装 Digipad](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=digipad)
 

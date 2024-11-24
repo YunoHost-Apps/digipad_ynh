@@ -5,7 +5,9 @@ Hij mag NIET handmatig aangepast worden.
 
 # Digipad voor Yunohost
 
-[![Integratieniveau](https://dash.yunohost.org/integration/digipad.svg)](https://ci-apps.yunohost.org/ci/apps/digipad/) ![Mate van functioneren](https://ci-apps.yunohost.org/ci/badges/digipad.status.svg) ![Onderhoudsstatus](https://ci-apps.yunohost.org/ci/badges/digipad.maintain.svg)
+[![Integratieniveau](https://apps.yunohost.org/badge/integration/digipad)](https://ci-apps.yunohost.org/ci/apps/digipad/)
+![Mate van functioneren](https://apps.yunohost.org/badge/state/digipad)
+![Onderhoudsstatus](https://apps.yunohost.org/badge/maintained/digipad)
 
 [![Digipad met Yunohost installeren](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=digipad)
 

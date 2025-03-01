@@ -20,7 +20,7 @@ No se debe editar a mano.
 
 
 
-**Versión actual:** 1.4.0~ynh1
+**Versión actual:** 1.4.1~ynh1
 
 **Demo:** <https://digipad.app/>
 

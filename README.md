@@ -20,7 +20,7 @@ It shall NOT be edited by hand.
 
 Create multimedia collaborative walls
 
-**Shipped version:** 1.4.0~ynh1
+**Shipped version:** 1.4.1~ynh1
 
 **Demo:** <https://digipad.app/>
 

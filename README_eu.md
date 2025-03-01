@@ -20,7 +20,7 @@ EZ editatu eskuz.
 
 
 
-**Paketatutako bertsioa:** 1.4.0~ynh1
+**Paketatutako bertsioa:** 1.4.1~ynh1
 
 **Demoa:** <https://digipad.app/>
 

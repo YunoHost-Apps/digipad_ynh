@@ -20,7 +20,7 @@ Ini TIDAK boleh diedit dengan tangan.
 
 
 
-**Versi terkirim:** 1.4.0~ynh1
+**Versi terkirim:** 1.4.2~ynh1
 
 **Demo:** <https://digipad.app/>
 

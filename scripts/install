@@ -1,6 +1,5 @@
 #!/bin/bash
 
-source _common.sh
 source /usr/share/yunohost/helpers
 
 #=================================================
@@ -8,13 +7,6 @@ source /usr/share/yunohost/helpers
 #=================================================
 
 key=$(ynh_string_random --length=128)
-
-#=================================================
-# INSTALL DEPENDENCIES
-#=================================================
-ynh_script_progression "Installing NodeJS..."
-
-ynh_nodejs_install
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
@@ -57,7 +49,7 @@ popd
 #=================================================
 ynh_script_progression "Starting app's systemd service..."
 
-ynh_systemctl --service=$app --action="start" --log_path="/var/log/$app/$app.log"
+ynh_systemctl  --action="start"
 
 #=================================================
 # END OF SCRIPT

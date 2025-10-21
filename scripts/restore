@@ -1,6 +1,5 @@
 #!/bin/bash
 
-source ../settings/scripts/_common.sh
 source /usr/share/yunohost/helpers
 
 #=================================================
@@ -16,13 +15,6 @@ ynh_restore "$install_dir"
 ynh_script_progression "Restoring the PostgreSQL database..."
 
 ynh_psql_db_shell < ./db.sql
-
-#=================================================
-# REINSTALL DEPENDENCIES
-#=================================================
-ynh_script_progression "Reinstalling dependencies..."
-
-ynh_nodejs_install
 
 #=================================================
 # RESTORE SYSTEM CONFIGURATIONS
@@ -43,7 +35,7 @@ ynh_restore "/etc/logrotate.d/$app"
 #=================================================
 ynh_script_progression "Reloading NGINX web server and $app's service..."
 
-ynh_systemctl --service=$app --action="start" --log_path="systemd"
+ynh_systemctl  --action="start" --log_path="systemd"
 
 ynh_systemctl --service=nginx --action=reload
 

@@ -49,7 +49,8 @@ popd
 # START SYSTEMD SERVICE
 #=================================================
 ynh_script_progression "Starting app's systemd service..."
-
+# linter fail
+sleep 15
 ynh_systemctl --service=$app --action="start" --log_path="/var/log/$app/$app.log"
 
 #=================================================

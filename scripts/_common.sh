@@ -4,3 +4,4 @@
 # COMMON VARIABLES AND CUSTOM HELPERS
 #=================================================
 
+nodejs_version="24"

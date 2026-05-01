@@ -45,10 +45,11 @@ ynh_config_add_logrotate
 # START SYSTEMD SERVICE
 #=================================================
 ynh_script_progression "Starting $app's systemd service..."
-# linter fail
-sleep 15
+
 ynh_systemctl --service=$app --action="start" --log_path="systemd"
 
+# linter fail
+sleep 15
 #=================================================
 # END OF SCRIPT
 #=================================================

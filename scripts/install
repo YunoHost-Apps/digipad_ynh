@@ -17,19 +17,6 @@ ynh_script_progression "Setting up source files..."
 ynh_setup_source --dest_dir="$install_dir"
 
 #=================================================
-# SYSTEM CONFIGURATION
-#=================================================
-ynh_script_progression "Adding system configurations related to $app..."
-
-ynh_config_add_nginx
-
-ynh_config_add_systemd
-
-yunohost service add "$app" --description="Create multimedia collaborative walls" --log="/var/log/$app/$app.log"
-
-ynh_config_add_logrotate
-
-#=================================================
 # ADD A CONFIGURATION
 #=================================================
 ynh_script_progression "Adding app's configuration file..."
@@ -44,6 +31,19 @@ ynh_script_progression "Installing $app..."
 pushd $install_dir
 	ynh_hide_warnings ynh_exec_as_app npm install
 popd
+
+#=================================================
+# SYSTEM CONFIGURATION
+#=================================================
+ynh_script_progression "Adding system configurations related to $app..."
+
+ynh_config_add_nginx
+
+ynh_config_add_systemd
+
+yunohost service add "$app" --description="Create multimedia collaborative walls" --log="/var/log/$app/$app.log"
+
+ynh_config_add_logrotate
 
 #=================================================
 # START SYSTEMD SERVICE

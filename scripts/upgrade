@@ -18,6 +18,17 @@ ynh_script_progression "Upgrading source files..."
 ynh_setup_source --dest_dir="$install_dir" --full_replace --keep="pages .env"
 
 #=================================================
+# INSTALL APP
+#=================================================
+ynh_script_progression "Installing $app..."
+
+pushd $install_dir
+	ynh_hide_warnings npm install
+popd
+
+chown -R "$app:$app" "$install_dir"
+
+#=================================================
 # REAPPLY SYSTEM CONFIGURATIONS
 #=================================================
 ynh_script_progression "Upgrading system configurations related to $app..."
@@ -29,17 +40,6 @@ ynh_config_add_systemd
 yunohost service add "$app" --description="Create multimedia collaborative walls" --log="/var/log/$app/$app.log"
 
 ynh_config_add_logrotate
-
-#=================================================
-# INSTALL APP
-#=================================================
-ynh_script_progression "Installing $app..."
-
-pushd $install_dir
-	ynh_hide_warnings npm install
-popd
-
-chown -R "$app:$app" "$install_dir"
 
 #=================================================
 # START SYSTEMD SERVICE

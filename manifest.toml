@@ -47,27 +47,27 @@ ram.runtime = "150M"
     type = "password"
 
     [install.create_account]
-    help.en = "Allow account creation"
-    help.fr = "Autoriser la création de comptes"
+    ask.en = "Allow account creation"
+    ask.fr = "Autoriser la création de comptes"
     type = "boolean"
     default = 1
     
     [install.account_validation]
-    help.en = "Email registration validation"
-    help.fr = "Validation de l'inscription par email"
+    ask.en = "Email registration validation"
+    ask.fr = "Validation de l'inscription par email"
     type = "boolean"
     default = 1
 
     [install.without_account]
-    help.en = "Allow pad creation without account"
-    help.fr = "Autoriser la création de pads sans compte"
+    ask.en = "Allow pad creation without account"
+    ask.fr = "Autoriser la création de pads sans compte"
     type = "boolean"
     default = 1
 
     [install.pad_limit]
-    help.en = "Maximum number of pads per user"
-    help.fr = "Nombre maximum de pads par compte utilisateur"
-    type = "boolean"
+    ask.en = "Maximum number of pads per user"
+    ask.fr = "Nombre maximum de pads par compte utilisateur"
+    type = "number"
     default = 50
 
 [resources]

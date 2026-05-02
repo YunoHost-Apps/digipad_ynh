@@ -92,10 +92,10 @@ ram.runtime = "300M"
     [resources.ports]
 
     [resources.apt]
-    packages = "postgresql, postgresql-contrib, redis-server, libreoffice, ghostscript, graphicsmagick"
+    packages = "postgresql, postgresql-contrib, redis-server, libreoffice, ghostscript, graphicsmagick, build-essential"
 
     [resources.database]
     type = "postgresql"
 
     [resources.nodejs]
-    version = "20"
+    version = "24"

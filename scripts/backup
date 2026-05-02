@@ -1,6 +1,5 @@
 #!/bin/bash
 
-source ../settings/scripts/_common.sh
 source /usr/share/yunohost/helpers
 
 #=================================================
@@ -14,6 +13,8 @@ ynh_backup "$install_dir"
 #=================================================
 
 ynh_backup "/etc/nginx/conf.d/$domain.d/$app.conf"
+
+ynh_backup "/var/log/$app/$app.log"
 
 ynh_backup "/etc/logrotate.d/$app"
 

@@ -10,6 +10,8 @@ Environment=PATH=__PATH_WITH_NODEJS__
 EnvironmentFile=__INSTALL_DIR__/.env
 WorkingDirectory=__INSTALL_DIR__/
 ExecStart=__NODEJS_DIR__/npm run prod
+StandardOutput=append:/var/log/__APP__/__APP__.log
+StandardError=inherit
 Restart=on-failure
 RestartSec=10
 
@@ -33,8 +35,7 @@ ProtectKernelModules=yes
 ProtectKernelTunables=yes
 LockPersonality=yes
 SystemCallArchitectures=native
-SystemCallFilter=~@clock @debug @module @mount @obsolete @reboot @setuid @swap @cpu-emulation @privileged
-
+SystemCallFilter=~@clock @debug @module @mount @obsolete @reboot @setuid @swap @cpu-emulation @raw-io @reboot @swap _sysctl acct bpf capset fanotify_init fanotify_mark nfsservctl open_by_handle_at pivot_root quotactl quotactl_fd setdomainname setfsuid setfsuid32 sethostname vhangup chown chown32 fchown32 fchownat lchown lchown32
 # Denying access to capabilities that should not be relevant for webapps
 # Doc: https://man7.org/linux/man-pages/man7/capabilities.7.html
 CapabilityBoundingSet=~CAP_RAWIO CAP_MKNOD

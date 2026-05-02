@@ -1,0 +1,56 @@
+version = "1.0"
+
+[main]
+name.en = "Configuration panel"
+name.fr = "Panneau de configuration"
+services = ["__APP__"]
+
+
+[main.instance]
+name.en = "Global settings"
+name.fr = "Paramètres Globaux"
+
+  [main.instance.create_account]
+      ask.en = "Allow account creation"
+      ask.fr = "Autoriser la création de comptes"
+      type = "boolean"
+      default = 1
+      bind = "VITE_CREATE_ACCOUNT:__INSTALL_DIR__/.env"
+      
+  [main.instance.account_validation]
+      ask.en = "Email registration validation"
+      ask.fr = "Validation de l'inscription par e-mail"
+      type = "boolean"
+      default = 1
+      bind = "ACCOUNT_VALIDATION:__INSTALL_DIR__/.env"
+
+  [main.instance.without_account]
+      ask.en = "Allow pad creation without account"
+      ask.fr = "Autoriser la création de pads sans compte"
+      type = "boolean"
+      default = 1
+      bind = "VITE_PAD_WITHOUT_ACCOUNT:__INSTALL_DIR__/.env"
+
+  [main.instance.pad_limit]
+      ask.en = "Maximum number of pads per user"
+      ask.fr = "Nombre maximum de pads par compte utilisateur"
+      type = "number"
+      default = 50
+      min = 0
+      max = 1000
+      bind = "VITE_PAD_LIMIT:__INSTALL_DIR__/.env"
+
+[main.uploads]
+name.en = "Upload limit size"
+name.fr = "Téléchargement de fichiers"
+
+  [main.uploads.max_upload_size]
+      ask.fr = "Taille limite pour le téléchargement des fichiers en Mo"
+      ask.en = "Size limit file upload (Mb)"
+      type = "number"
+      min = 0
+      max = 5000
+      help.fr = "Valeur maximale de 5Go"
+      help.en = "Max size 5Gb"
+      bind = "VITE_UPLOAD_LIMIT:__INSTALL_DIR__/.env"
+

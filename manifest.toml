@@ -8,7 +8,7 @@ name = "Digipad"
 description.en = "Create multimedia collaborative walls"
 description.fr = "Créer des murs collaboratifs multimédias"
 
-version = "1.4.2~ynh1"
+version = "1.5.14~ynh1"
 
 maintainers = ["mrflos"]
 
@@ -29,8 +29,8 @@ ldap =  false
 sso = false
 
 disk = "800M"
-ram.build = "500M"
-ram.runtime = "150M"
+ram.build = "1000M"
+ram.runtime = "300M"
 
 [install]
 
@@ -46,13 +46,39 @@ ram.runtime = "150M"
     help.fr ="Mot de passe pour accéder à la page d'administration `/admin`"
     type = "password"
 
+    [install.create_account]
+    ask.en = "Allow account creation"
+    ask.fr = "Autoriser la création de comptes"
+    type = "boolean"
+    default = 1
+    
+    [install.account_validation]
+    ask.en = "Email registration validation"
+    ask.fr = "Validation de l'inscription par email"
+    type = "boolean"
+    default = 1
+
+    [install.without_account]
+    ask.en = "Allow pad creation without account"
+    ask.fr = "Autoriser la création de pads sans compte"
+    type = "boolean"
+    default = 1
+
+    [install.pad_limit]
+    ask.en = "Maximum number of pads per user"
+    ask.fr = "Nombre maximum de pads par compte utilisateur"
+    type = "number"
+    default = 50
+    min = 0
+    max = 1000
+
 [resources]
 
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://codeberg.org/ladigitale/digipad/archive/1.4.2.tar.gz"
-    sha256 = "1e364c67ef78966ca02329ef7b1cd0d8e4c598e5e01b267eb55d38a2a6bb6e3d"
+    url = "https://codeberg.org/ladigitale/digipad/archive/1.5.14.tar.gz"
+    sha256 = "b8d3ca1274933034ce4e854351d61bc19489b31b4f7abbaddef8a9dd8ea335bb"
     autoupdate.strategy = "latest_forgejo_tag"
 
     [resources.system_user]
@@ -66,7 +92,10 @@ ram.runtime = "150M"
     [resources.ports]
 
     [resources.apt]
-    packages = "postgresql, postgresql-contrib, redis-server"
+    packages = "postgresql, postgresql-contrib, redis-server, libreoffice, ghostscript, graphicsmagick, build-essential"
 
     [resources.database]
     type = "postgresql"
+
+    [resources.nodejs]
+    version = "24"

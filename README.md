@@ -21,6 +21,7 @@ Create multimedia collaborative walls
 
 
 ## Screenshots
+![Screenshot of Digipad](./doc/screenshots/digitale.png)
 ![Screenshot of Digipad](./doc/screenshots/screenshot.png)
 
 ## 📦 Developer info

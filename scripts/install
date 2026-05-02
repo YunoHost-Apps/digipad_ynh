@@ -50,7 +50,7 @@ ynh_config_add_logrotate
 #=================================================
 ynh_script_progression "Starting app's systemd service..."
 
-ynh_systemctl --service=$app --action="start" --log_path="/var/log/$app/$app.log" --wait_until="cross-env NODE_ENV=production node ./server" --timeout=300
+ynh_systemctl --service=$app --action="start" --log_path="/var/log/$app/$app.log" --wait_until="curl -f http://127.0.0.1:$port"
 
 #=================================================
 # END OF SCRIPT

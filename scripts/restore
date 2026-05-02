@@ -31,6 +31,8 @@ yunohost service add "$app" --description="Create multimedia collaborative walls
 
 ynh_restore "/etc/logrotate.d/$app"
 
+ynh_restore "/var/log/$app/$app.log"
+
 #=================================================
 # RELOAD NGINX AND PHP-FPM OR THE APP SERVICE
 #=================================================

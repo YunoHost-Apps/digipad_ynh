@@ -96,4 +96,4 @@ ram.runtime = "300M"
     type = "postgresql"
 
     [resources.nodejs]
-    version = "24"
+    version = "24.15.0"

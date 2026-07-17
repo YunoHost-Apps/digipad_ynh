@@ -25,7 +25,7 @@ helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
 
-ldap =  false
+ldap = false
 sso = false
 
 disk = "800M"
@@ -98,4 +98,4 @@ ram.runtime = "300M"
     type = "postgresql"
 
     [resources.nodejs]
-    version = "24.15.0"
+    version = "24"

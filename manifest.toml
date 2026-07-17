@@ -8,7 +8,7 @@ name = "Digipad"
 description.en = "Create multimedia collaborative walls"
 description.fr = "Créer des murs collaboratifs multimédias"
 
-version = "1.5.14~ynh2"
+version = "1.5.14~ynh3"
 
 maintainers = ["mrflos"]
 

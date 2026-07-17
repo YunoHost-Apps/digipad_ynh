@@ -65,12 +65,10 @@ ram.runtime = "300M"
     default = 1
 
     [install.pad_limit]
-    ask.en = "Maximum number of pads per user"
-    ask.fr = "Nombre maximum de pads par compte utilisateur"
+    ask.en = "Maximum number of pads per user (0 to 1000)"
+    ask.fr = "Nombre maximum de pads par compte utilisateur (0 à 1000)"
     type = "number"
     default = 50
-    min = 0
-    max = 1000
 
 [resources]
 

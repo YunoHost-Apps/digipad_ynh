@@ -78,7 +78,7 @@ ram.runtime = "300M"
 
     [resources.sources.main]
     url = "https://codeberg.org/ladigitale/digipad/archive/1.5.14.tar.gz"
-    sha256 = "b8d3ca1274933034ce4e854351d61bc19489b31b4f7abbaddef8a9dd8ea335bb"
+    sha256 = "715482a2ee9e2a448f34eb54eff299476612477f8ddf48453bf36b421cc0c12e"
     autoupdate.strategy = "latest_forgejo_tag"
 
     [resources.system_user]

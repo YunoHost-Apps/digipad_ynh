@@ -23,7 +23,6 @@ ynh_script_progression "Installing $app..."
 
 pushd $install_dir
 	ynh_hide_warnings ynh_exec_as_app npm install --allow-git=root
-	ynh_hide_warnings ynh_exec_as_app npm run build
 popd
 
 

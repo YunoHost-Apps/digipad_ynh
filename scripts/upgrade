@@ -25,6 +25,7 @@ pushd $install_dir
 	ynh_hide_warnings ynh_exec_as_app npm install
 popd
 
+
 chown -R "$app:$app" "$install_dir"
 
 #=================================================

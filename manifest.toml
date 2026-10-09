@@ -8,7 +8,7 @@ name = "Digipad"
 description.en = "Create multimedia collaborative walls"
 description.fr = "Créer des murs collaboratifs multimédias"
 
-version = "1.5.14~ynh3"
+version = "1.6.2~ynh1"
 
 maintainers = ["mrflos"]
 
@@ -75,8 +75,8 @@ ram.runtime = "300M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://codeberg.org/ladigitale/digipad/archive/1.5.14.tar.gz"
-    sha256 = "715482a2ee9e2a448f34eb54eff299476612477f8ddf48453bf36b421cc0c12e"
+    url = "https://codeberg.org/ladigitale/digipad/archive/1.6.2.tar.gz"
+    sha256 = "5a4c73cf74d3c98dac5aab9d0d715263263e2b787df8961baf1d57071336936b"
     autoupdate.strategy = "latest_forgejo_tag"
 
     [resources.system_user]

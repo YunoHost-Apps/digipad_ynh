@@ -90,7 +90,7 @@ ram.runtime = "300M"
     [resources.ports]
 
     [resources.apt]
-    packages = "postgresql, postgresql-contrib, redis-server, libreoffice, ghostscript, graphicsmagick, build-essential"
+    packages = "postgresql, postgresql-contrib, redis-server, libreoffice, ghostscript, graphicsmagick, build-essential, zlib1g-dev"
 
     [resources.database]
     type = "postgresql"

@@ -69,6 +69,9 @@ ram.runtime = "300M"
     ask.fr = "Nombre maximum de pads par compte utilisateur (0 à 1000)"
     type = "number"
     default = 50
+    # Do not remove this :
+    min = 0
+    max = 1000
 
 [resources]
 
